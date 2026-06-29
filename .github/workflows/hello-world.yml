@@ -1,0 +1,18 @@
+name: Hello World Workflow
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run a one-line script
+        run: echo "Hello, World!"
+
+      - name: Run a multi-line script
+        run: |
+          echo "Welcome to GitHub Actions."
+          echo "This is your first workflow successfully running!"
